@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "note-rounded-square-interface-symbol.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

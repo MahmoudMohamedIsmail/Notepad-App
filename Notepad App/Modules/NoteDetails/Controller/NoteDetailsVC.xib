@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoteDetailsVC" customModule="Notepad_App" customModuleProvider="target">
+            <connections>
+                <outlet property="addLocation_Btn" destination="ORF-42-Afr" id="85E-Ri-b94"/>
+                <outlet property="addPhoto_Btn" destination="khH-0g-d75" id="nUX-FU-III"/>
+                <outlet property="body_TextView" destination="z9A-xz-0OE" id="fDY-jL-onE"/>
+                <outlet property="selectedPhoto_ImgView" destination="u7F-3A-ThM" id="Kih-E3-xyo"/>
+                <outlet property="title_TextView" destination="8wP-MV-P2b" id="1fA-iY-Qm2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="diD-gK-zCV" customClass="DesignableUIScrollView" customModule="Notepad_App" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fIz-PV-cFq">
+                            <rect key="frame" x="20" y="0.0" width="335" height="637"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rqH-SM-YhH">
+                                    <rect key="frame" x="0.0" y="0.0" width="335" height="86"/>
+                                    <subviews>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8wP-MV-P2b" customClass="DesignableUITextView" customModule="Notepad_App" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="43"/>
+                                            <color key="textColor" systemColor="labelColor"/>
+                                            <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="18"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="Note Title Here"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </textView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="z9A-xz-0OE" customClass="DesignableUITextView" customModule="Notepad_App" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="43" width="335" height="43"/>
+                                            <color key="textColor" systemColor="labelColor"/>
+                                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="placeHolder" value="Note Body Here"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </textView>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Irv-Ho-5Rl">
+                                    <rect key="frame" x="0.0" y="547" width="335" height="90"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORF-42-Afr">
+                                            <rect key="frame" x="0.0" y="0.0" width="134" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="Tn0-GH-aaW"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                                            <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="-15" maxY="0.0"/>
+                                            <state key="normal" title="Add location" image="mappin.circle" catalog="system">
+                                                <color key="titleColor" name="MeduimGray"/>
+                                            </state>
+                                        </button>
+                                        <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="koH-H3-VQR">
+                                            <rect key="frame" x="0.0" y="45" width="119" height="45"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khH-0g-d75">
+                                                    <rect key="frame" x="0.0" y="0.0" width="119" height="45"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="45" id="e9G-ef-eUS"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                                                    <color key="tintColor" name="Primary"/>
+                                                    <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="-15" maxY="0.0"/>
+                                                    <state key="normal" title="Add photo" image="photo" catalog="system">
+                                                        <color key="titleColor" name="MeduimGray"/>
+                                                    </state>
+                                                </button>
+                                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u7F-3A-ThM">
+                                                    <rect key="frame" x="0.0" y="0.0" width="270" height="150"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="150" id="I6Y-ZW-voU"/>
+                                                        <constraint firstAttribute="width" secondItem="u7F-3A-ThM" secondAttribute="height" multiplier="1.8:1" id="RCl-6P-AQa"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="fIz-PV-cFq" firstAttribute="leading" secondItem="diD-gK-zCV" secondAttribute="leading" constant="20" id="6br-qJ-Ff7"/>
+                        <constraint firstItem="fIz-PV-cFq" firstAttribute="width" secondItem="diD-gK-zCV" secondAttribute="width" constant="-40" id="Cm5-Ic-e8g"/>
+                        <constraint firstItem="fIz-PV-cFq" firstAttribute="top" secondItem="diD-gK-zCV" secondAttribute="top" id="c2X-Hf-dWS"/>
+                        <constraint firstAttribute="trailing" secondItem="fIz-PV-cFq" secondAttribute="trailing" constant="20" id="d7K-wk-fy1"/>
+                        <constraint firstItem="fIz-PV-cFq" firstAttribute="height" secondItem="diD-gK-zCV" secondAttribute="height" priority="250" constant="-30" id="nrQ-e2-aG1"/>
+                        <constraint firstAttribute="bottom" secondItem="fIz-PV-cFq" secondAttribute="bottom" id="wXk-lx-Teu"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="Cbv-pq-XtL"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="dyc-lu-Yep"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="diD-gK-zCV" secondAttribute="bottom" id="3Gp-ZT-EwQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="diD-gK-zCV" secondAttribute="trailing" id="659-kw-opt"/>
+                <constraint firstItem="diD-gK-zCV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dOn-Vj-MOe"/>
+                <constraint firstItem="diD-gK-zCV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="e3r-Ui-cxq"/>
+            </constraints>
+            <point key="canvasLocation" x="125.59999999999999" y="56.221889055472268"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mappin.circle" catalog="system" width="128" height="121"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
+        <namedColor name="MeduimGray">
+            <color red="0.6470000147819519" green="0.6470000147819519" blue="0.65100002288818359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary">
+            <color red="0.68235294117647061" green="0.67450980392156867" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

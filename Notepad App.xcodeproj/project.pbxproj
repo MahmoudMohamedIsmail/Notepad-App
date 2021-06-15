@@ -3,18 +3,65 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D1888A570A86D19062D3BEF /* Pods_Notepad_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 719C96C1B8F58A927DF2DA23 /* Pods_Notepad_AppTests.framework */; };
+		792F1A0226793711001673E8 /* DesignableUITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792F1A0126793711001673E8 /* DesignableUITextView.swift */; };
+		792F1A0726793973001673E8 /* DesignableUIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792F1A0626793973001673E8 /* DesignableUIScrollView.swift */; };
 		79D0D5DF2676918000704269 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D5DE2676918000704269 /* AppDelegate.swift */; };
 		79D0D5E12676918000704269 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D5E02676918000704269 /* SceneDelegate.swift */; };
-		79D0D5E32676918000704269 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D5E22676918000704269 /* ViewController.swift */; };
-		79D0D5E62676918000704269 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79D0D5E42676918000704269 /* Main.storyboard */; };
 		79D0D5E82676918400704269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79D0D5E72676918400704269 /* Assets.xcassets */; };
 		79D0D5EB2676918400704269 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79D0D5E92676918400704269 /* LaunchScreen.storyboard */; };
 		79D0D5F62676918400704269 /* Notepad_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D5F52676918400704269 /* Notepad_AppTests.swift */; };
 		79D0D6012676918400704269 /* Notepad_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D6002676918400704269 /* Notepad_AppUITests.swift */; };
+		79D0D6712676923100704269 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D6202676923000704269 /* UIAlertController+Extension.swift */; };
+		79D0D6722676923100704269 /* Views+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D6212676923000704269 /* Views+Localization.swift */; };
+		79D0D6732676923100704269 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D6222676923000704269 /* UIView+Extension.swift */; };
+		79D0D6742676923100704269 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D6232676923000704269 /* String+Extension.swift */; };
+		79D0D6752676923100704269 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D6242676923000704269 /* UITableViewCell+Extension.swift */; };
+		79D0D6762676923100704269 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D6252676923000704269 /* Dictionary+Extension.swift */; };
+		79D0D6772676923100704269 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D6262676923000704269 /* UITableView+Extension.swift */; };
+		79D0D6782676923100704269 /* BaseWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D6282676923000704269 /* BaseWireFrame.swift */; };
+		79D0D6792676923100704269 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D6292676923000704269 /* BaseViewModel.swift */; };
+		79D0D68A2676923100704269 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79D0D64A2676923100704269 /* Colors.xcassets */; };
+		79D0D68B2676923100704269 /* ColorSystem.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D0D64B2676923100704269 /* ColorSystem.png */; };
+		79D0D68C2676923100704269 /* ColorsSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D64C2676923100704269 /* ColorsSystem.swift */; };
+		79D0D68D2676923100704269 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D64D2676923100704269 /* DesignSystem.swift */; };
+		79D0D68E2676923100704269 /* FontsSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D64F2676923100704269 /* FontsSystem.swift */; };
+		79D0D68F2676923100704269 /* FontStyleName.png in Resources */ = {isa = PBXBuildFile; fileRef = 79D0D6502676923100704269 /* FontStyleName.png */; };
+		79D0D6902676923100704269 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D6522676923100704269 /* Fonts.swift */; };
+		79D0D6912676923100704269 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79D0D6542676923100704269 /* Poppins-Light.ttf */; };
+		79D0D6922676923100704269 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79D0D6552676923100704269 /* Poppins-Medium.ttf */; };
+		79D0D6932676923100704269 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79D0D6562676923100704269 /* Poppins-Regular.ttf */; };
+		79D0D6942676923100704269 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79D0D6572676923100704269 /* Poppins-Bold.ttf */; };
+		79D0D6952676923100704269 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79D0D6582676923100704269 /* Poppins-Black.ttf */; };
+		79D0D6962676923100704269 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79D0D6592676923100704269 /* Poppins-SemiBold.ttf */; };
+		79D0D6972676923100704269 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D65B2676923100704269 /* AppCoordinator.swift */; };
+		79D0D6982676923100704269 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D65D2676923100704269 /* Navigator.swift */; };
+		79D0D6992676923100704269 /* MainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D65F2676923100704269 /* MainNavigator.swift */; };
+		79D0D69A2676923100704269 /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D6602676923100704269 /* AppStoryboard.swift */; };
+		79D0D69B2676923100704269 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D6622676923100704269 /* Constant.swift */; };
+		79D0D69C2676923100704269 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D6642676923100704269 /* Animator.swift */; };
+		79D0D69D2676923100704269 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79D0D6662676923100704269 /* Localizable.strings */; };
+		79D0D69E2676923100704269 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D6692676923100704269 /* LanguageManager.swift */; };
+		79D0D69F2676923100704269 /* DesignableUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D66B2676923100704269 /* DesignableUIImageView.swift */; };
+		79D0D6A02676923100704269 /* DesignableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D66C2676923100704269 /* DesignableUITextField.swift */; };
+		79D0D6A12676923100704269 /* IProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D66D2676923100704269 /* IProgress.swift */; };
+		79D0D6A22676923100704269 /* DesignableUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D66E2676923100704269 /* DesignableUIView.swift */; };
+		79D0D6A32676923100704269 /* DesignableUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D66F2676923100704269 /* DesignableUIButton.swift */; };
+		79EE08952676A0BD0061C25E /* NotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EE08932676A0BD0061C25E /* NotesVC.swift */; };
+		79EE08962676A0BD0061C25E /* NotesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79EE08942676A0BD0061C25E /* NotesVC.xib */; };
+		79EE089B2676A1490061C25E /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EE089A2676A1490061C25E /* NotesViewModel.swift */; };
+		79EE08A12676A1930061C25E /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EE089F2676A1930061C25E /* NoteCell.swift */; };
+		79EE08A22676A1930061C25E /* NoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79EE08A02676A1930061C25E /* NoteCell.xib */; };
+		79EE08B42676AF2B0061C25E /* NoNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EE08B32676AF2B0061C25E /* NoNotesView.swift */; };
+		79EE08BF2676C5C40061C25E /* NoteDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EE08BD2676C5C40061C25E /* NoteDetailsVC.swift */; };
+		79EE08C02676C5C40061C25E /* NoteDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79EE08BE2676C5C40061C25E /* NoteDetailsVC.xib */; };
+		79EE08C82676C6250061C25E /* NoteDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EE08C72676C6250061C25E /* NoteDetailsViewModel.swift */; };
+		B181AF30EA31BFFAE688D5CA /* Pods_Notepad_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D212BB150338BFA6F352079B /* Pods_Notepad_App.framework */; };
+		F3CE63D4F0915B534BC1C0D1 /* Pods_Notepad_App_Notepad_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8C02CD4834F3C6BABDCB63 /* Pods_Notepad_App_Notepad_AppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +82,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		34ECE26795A8A3ED7030DA1C /* Pods-Notepad App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notepad App.debug.xcconfig"; path = "Target Support Files/Pods-Notepad App/Pods-Notepad App.debug.xcconfig"; sourceTree = "<group>"; };
+		406B647FCB9CDF46EEC10440 /* Pods-Notepad AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notepad AppTests.release.xcconfig"; path = "Target Support Files/Pods-Notepad AppTests/Pods-Notepad AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		719C96C1B8F58A927DF2DA23 /* Pods_Notepad_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notepad_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		792F1A0126793711001673E8 /* DesignableUITextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableUITextView.swift; sourceTree = "<group>"; };
+		792F1A0626793973001673E8 /* DesignableUIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUIScrollView.swift; sourceTree = "<group>"; };
 		79D0D5DB2676918000704269 /* Notepad App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notepad App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79D0D5DE2676918000704269 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79D0D5E02676918000704269 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		79D0D5E22676918000704269 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		79D0D5E52676918000704269 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79D0D5E72676918400704269 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79D0D5EA2676918400704269 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79D0D5EC2676918400704269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +99,57 @@
 		79D0D5FC2676918400704269 /* Notepad AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Notepad AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79D0D6002676918400704269 /* Notepad_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notepad_AppUITests.swift; sourceTree = "<group>"; };
 		79D0D6022676918400704269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79D0D6202676923000704269 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
+		79D0D6212676923000704269 /* Views+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Views+Localization.swift"; sourceTree = "<group>"; };
+		79D0D6222676923000704269 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		79D0D6232676923000704269 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		79D0D6242676923000704269 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		79D0D6252676923000704269 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
+		79D0D6262676923000704269 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		79D0D6282676923000704269 /* BaseWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWireFrame.swift; sourceTree = "<group>"; };
+		79D0D6292676923000704269 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		79D0D64A2676923100704269 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		79D0D64B2676923100704269 /* ColorSystem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ColorSystem.png; sourceTree = "<group>"; };
+		79D0D64C2676923100704269 /* ColorsSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsSystem.swift; sourceTree = "<group>"; };
+		79D0D64D2676923100704269 /* DesignSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		79D0D64F2676923100704269 /* FontsSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontsSystem.swift; sourceTree = "<group>"; };
+		79D0D6502676923100704269 /* FontStyleName.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FontStyleName.png; sourceTree = "<group>"; };
+		79D0D6522676923100704269 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		79D0D6542676923100704269 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		79D0D6552676923100704269 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		79D0D6562676923100704269 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		79D0D6572676923100704269 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		79D0D6582676923100704269 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		79D0D6592676923100704269 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		79D0D65B2676923100704269 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		79D0D65D2676923100704269 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		79D0D65F2676923100704269 /* MainNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
+		79D0D6602676923100704269 /* AppStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
+		79D0D6622676923100704269 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		79D0D6642676923100704269 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		79D0D6672676923100704269 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		79D0D6682676923100704269 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		79D0D6692676923100704269 /* LanguageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
+		79D0D66B2676923100704269 /* DesignableUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableUIImageView.swift; sourceTree = "<group>"; };
+		79D0D66C2676923100704269 /* DesignableUITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableUITextField.swift; sourceTree = "<group>"; };
+		79D0D66D2676923100704269 /* IProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IProgress.swift; sourceTree = "<group>"; };
+		79D0D66E2676923100704269 /* DesignableUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableUIView.swift; sourceTree = "<group>"; };
+		79D0D66F2676923100704269 /* DesignableUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableUIButton.swift; sourceTree = "<group>"; };
+		79EE08932676A0BD0061C25E /* NotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesVC.swift; sourceTree = "<group>"; };
+		79EE08942676A0BD0061C25E /* NotesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotesVC.xib; sourceTree = "<group>"; };
+		79EE089A2676A1490061C25E /* NotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
+		79EE089F2676A1930061C25E /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		79EE08A02676A1930061C25E /* NoteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteCell.xib; sourceTree = "<group>"; };
+		79EE08B32676AF2B0061C25E /* NoNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNotesView.swift; sourceTree = "<group>"; };
+		79EE08BD2676C5C40061C25E /* NoteDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailsVC.swift; sourceTree = "<group>"; };
+		79EE08BE2676C5C40061C25E /* NoteDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteDetailsVC.xib; sourceTree = "<group>"; };
+		79EE08C72676C6250061C25E /* NoteDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailsViewModel.swift; sourceTree = "<group>"; };
+		88079D3B7ECEDE7BCA40D9BE /* Pods-Notepad App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notepad App.release.xcconfig"; path = "Target Support Files/Pods-Notepad App/Pods-Notepad App.release.xcconfig"; sourceTree = "<group>"; };
+		937C5EAC09B0A5972095EE05 /* Pods-Notepad AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notepad AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Notepad AppTests/Pods-Notepad AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BCF76C71821FDF55FD30E564 /* Pods-Notepad App-Notepad AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notepad App-Notepad AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Notepad App-Notepad AppUITests/Pods-Notepad App-Notepad AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D212BB150338BFA6F352079B /* Pods_Notepad_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notepad_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB8C02CD4834F3C6BABDCB63 /* Pods_Notepad_App_Notepad_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notepad_App_Notepad_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF01A9CD6DDFB5F43260A969 /* Pods-Notepad App-Notepad AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notepad App-Notepad AppUITests.release.xcconfig"; path = "Target Support Files/Pods-Notepad App-Notepad AppUITests/Pods-Notepad App-Notepad AppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B181AF30EA31BFFAE688D5CA /* Pods_Notepad_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D1888A570A86D19062D3BEF /* Pods_Notepad_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +173,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3CE63D4F0915B534BC1C0D1 /* Pods_Notepad_App_Notepad_AppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67AC91D835020AFAC0950269 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34ECE26795A8A3ED7030DA1C /* Pods-Notepad App.debug.xcconfig */,
+				88079D3B7ECEDE7BCA40D9BE /* Pods-Notepad App.release.xcconfig */,
+				BCF76C71821FDF55FD30E564 /* Pods-Notepad App-Notepad AppUITests.debug.xcconfig */,
+				FF01A9CD6DDFB5F43260A969 /* Pods-Notepad App-Notepad AppUITests.release.xcconfig */,
+				937C5EAC09B0A5972095EE05 /* Pods-Notepad AppTests.debug.xcconfig */,
+				406B647FCB9CDF46EEC10440 /* Pods-Notepad AppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		79D0D5D22676918000704269 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +200,8 @@
 				79D0D5F42676918400704269 /* Notepad AppTests */,
 				79D0D5FF2676918400704269 /* Notepad AppUITests */,
 				79D0D5DC2676918000704269 /* Products */,
+				67AC91D835020AFAC0950269 /* Pods */,
+				94B9D80D88EBFB5EDE1046A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +218,14 @@
 		79D0D5DD2676918000704269 /* Notepad App */ = {
 			isa = PBXGroup;
 			children = (
+				79D0D6472676923100704269 /* Utilities */,
+				79D0D6272676923000704269 /* Core */,
+				79D0D61A2676922F00704269 /* Data */,
+				79D0D61F2676923000704269 /* Extension */,
+				79D0D62A2676923000704269 /* Modules */,
+				79D0D63E2676923000704269 /* SupportingFile */,
 				79D0D5DE2676918000704269 /* AppDelegate.swift */,
 				79D0D5E02676918000704269 /* SceneDelegate.swift */,
-				79D0D5E22676918000704269 /* ViewController.swift */,
-				79D0D5E42676918000704269 /* Main.storyboard */,
-				79D0D5E72676918400704269 /* Assets.xcassets */,
-				79D0D5E92676918400704269 /* LaunchScreen.storyboard */,
-				79D0D5EC2676918400704269 /* Info.plist */,
 			);
 			path = "Notepad App";
 			sourceTree = "<group>";
@@ -128,6 +248,299 @@
 			path = "Notepad AppUITests";
 			sourceTree = "<group>";
 		};
+		79D0D61A2676922F00704269 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				79D0D61B2676922F00704269 /* Remote */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		79D0D61B2676922F00704269 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		79D0D61F2676923000704269 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				79D0D6202676923000704269 /* UIAlertController+Extension.swift */,
+				79D0D6212676923000704269 /* Views+Localization.swift */,
+				79D0D6222676923000704269 /* UIView+Extension.swift */,
+				79D0D6232676923000704269 /* String+Extension.swift */,
+				79D0D6242676923000704269 /* UITableViewCell+Extension.swift */,
+				79D0D6252676923000704269 /* Dictionary+Extension.swift */,
+				79D0D6262676923000704269 /* UITableView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		79D0D6272676923000704269 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				79D0D6282676923000704269 /* BaseWireFrame.swift */,
+				79D0D6292676923000704269 /* BaseViewModel.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		79D0D62A2676923000704269 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				79EE08B82676C57C0061C25E /* NoteDetails */,
+				79EE08882676A0600061C25E /* Notes */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		79D0D63E2676923000704269 /* SupportingFile */ = {
+			isa = PBXGroup;
+			children = (
+				79D0D5E72676918400704269 /* Assets.xcassets */,
+				79D0D5E92676918400704269 /* LaunchScreen.storyboard */,
+				79D0D5EC2676918400704269 /* Info.plist */,
+			);
+			path = SupportingFile;
+			sourceTree = "<group>";
+		};
+		79D0D6472676923100704269 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				79D0D6482676923100704269 /* DesignSystem */,
+				79D0D65A2676923100704269 /* Coordinator */,
+				79D0D6612676923100704269 /* Constant */,
+				79D0D6632676923100704269 /* Animatro */,
+				79D0D6652676923100704269 /* Localization */,
+				79D0D66A2676923100704269 /* Customize */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		79D0D6482676923100704269 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				79D0D6492676923100704269 /* ColorsSystem */,
+				79D0D64D2676923100704269 /* DesignSystem.swift */,
+				79D0D64E2676923100704269 /* FontsSystem */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		79D0D6492676923100704269 /* ColorsSystem */ = {
+			isa = PBXGroup;
+			children = (
+				79D0D64A2676923100704269 /* Colors.xcassets */,
+				79D0D64B2676923100704269 /* ColorSystem.png */,
+				79D0D64C2676923100704269 /* ColorsSystem.swift */,
+			);
+			path = ColorsSystem;
+			sourceTree = "<group>";
+		};
+		79D0D64E2676923100704269 /* FontsSystem */ = {
+			isa = PBXGroup;
+			children = (
+				79D0D64F2676923100704269 /* FontsSystem.swift */,
+				79D0D6502676923100704269 /* FontStyleName.png */,
+				79D0D6512676923100704269 /* Fonts */,
+			);
+			path = FontsSystem;
+			sourceTree = "<group>";
+		};
+		79D0D6512676923100704269 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				79D0D6522676923100704269 /* Fonts.swift */,
+				79D0D6532676923100704269 /* Poppins */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		79D0D6532676923100704269 /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				79D0D6542676923100704269 /* Poppins-Light.ttf */,
+				79D0D6552676923100704269 /* Poppins-Medium.ttf */,
+				79D0D6562676923100704269 /* Poppins-Regular.ttf */,
+				79D0D6572676923100704269 /* Poppins-Bold.ttf */,
+				79D0D6582676923100704269 /* Poppins-Black.ttf */,
+				79D0D6592676923100704269 /* Poppins-SemiBold.ttf */,
+			);
+			path = Poppins;
+			sourceTree = "<group>";
+		};
+		79D0D65A2676923100704269 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				79D0D65B2676923100704269 /* AppCoordinator.swift */,
+				79D0D65C2676923100704269 /* Navigator */,
+				79D0D6602676923100704269 /* AppStoryboard.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		79D0D65C2676923100704269 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				79D0D65D2676923100704269 /* Navigator.swift */,
+				79D0D65E2676923100704269 /* MainNavigator */,
+			);
+			path = Navigator;
+			sourceTree = "<group>";
+		};
+		79D0D65E2676923100704269 /* MainNavigator */ = {
+			isa = PBXGroup;
+			children = (
+				79D0D65F2676923100704269 /* MainNavigator.swift */,
+			);
+			path = MainNavigator;
+			sourceTree = "<group>";
+		};
+		79D0D6612676923100704269 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				79D0D6622676923100704269 /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		79D0D6632676923100704269 /* Animatro */ = {
+			isa = PBXGroup;
+			children = (
+				79D0D6642676923100704269 /* Animator.swift */,
+			);
+			path = Animatro;
+			sourceTree = "<group>";
+		};
+		79D0D6652676923100704269 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				79D0D6662676923100704269 /* Localizable.strings */,
+				79D0D6692676923100704269 /* LanguageManager.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		79D0D66A2676923100704269 /* Customize */ = {
+			isa = PBXGroup;
+			children = (
+				792F1A0126793711001673E8 /* DesignableUITextView.swift */,
+				79D0D66B2676923100704269 /* DesignableUIImageView.swift */,
+				79D0D66C2676923100704269 /* DesignableUITextField.swift */,
+				79D0D66D2676923100704269 /* IProgress.swift */,
+				79D0D66E2676923100704269 /* DesignableUIView.swift */,
+				79D0D66F2676923100704269 /* DesignableUIButton.swift */,
+				792F1A0626793973001673E8 /* DesignableUIScrollView.swift */,
+			);
+			path = Customize;
+			sourceTree = "<group>";
+		};
+		79EE08882676A0600061C25E /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				79EE088C2676A0730061C25E /* Model */,
+				79EE088B2676A06F0061C25E /* View */,
+				79EE088A2676A06D0061C25E /* ViewModel */,
+				79EE08892676A06B0061C25E /* Controller */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		79EE08892676A06B0061C25E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				79EE08932676A0BD0061C25E /* NotesVC.swift */,
+				79EE08942676A0BD0061C25E /* NotesVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		79EE088A2676A06D0061C25E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				79EE089A2676A1490061C25E /* NotesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		79EE088B2676A06F0061C25E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79EE08A72676AC6B0061C25E /* NoNotesView */,
+				79EE08A62676AC5F0061C25E /* NoteCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		79EE088C2676A0730061C25E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79EE08A62676AC5F0061C25E /* NoteCell */ = {
+			isa = PBXGroup;
+			children = (
+				79EE089F2676A1930061C25E /* NoteCell.swift */,
+				79EE08A02676A1930061C25E /* NoteCell.xib */,
+			);
+			path = NoteCell;
+			sourceTree = "<group>";
+		};
+		79EE08A72676AC6B0061C25E /* NoNotesView */ = {
+			isa = PBXGroup;
+			children = (
+				79EE08B32676AF2B0061C25E /* NoNotesView.swift */,
+			);
+			path = NoNotesView;
+			sourceTree = "<group>";
+		};
+		79EE08B82676C57C0061C25E /* NoteDetails */ = {
+			isa = PBXGroup;
+			children = (
+				79EE08BB2676C5870061C25E /* Model */,
+				79EE08BA2676C5860061C25E /* ViewModel */,
+				79EE08B92676C5840061C25E /* Controller */,
+			);
+			path = NoteDetails;
+			sourceTree = "<group>";
+		};
+		79EE08B92676C5840061C25E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				79EE08BD2676C5C40061C25E /* NoteDetailsVC.swift */,
+				79EE08BE2676C5C40061C25E /* NoteDetailsVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		79EE08BA2676C5860061C25E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				79EE08C72676C6250061C25E /* NoteDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		79EE08BB2676C5870061C25E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		94B9D80D88EBFB5EDE1046A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D212BB150338BFA6F352079B /* Pods_Notepad_App.framework */,
+				DB8C02CD4834F3C6BABDCB63 /* Pods_Notepad_App_Notepad_AppUITests.framework */,
+				719C96C1B8F58A927DF2DA23 /* Pods_Notepad_AppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +548,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79D0D6052676918400704269 /* Build configuration list for PBXNativeTarget "Notepad App" */;
 			buildPhases = (
+				636533FA2FCDED8C1B9F5CB9 /* [CP] Check Pods Manifest.lock */,
 				79D0D5D72676918000704269 /* Sources */,
 				79D0D5D82676918000704269 /* Frameworks */,
 				79D0D5D92676918000704269 /* Resources */,
+				ECF9CB559F4D5EDEC5353678 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +567,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79D0D6082676918400704269 /* Build configuration list for PBXNativeTarget "Notepad AppTests" */;
 			buildPhases = (
+				5FE29BD969A05C3CADDCCE80 /* [CP] Check Pods Manifest.lock */,
 				79D0D5ED2676918400704269 /* Sources */,
 				79D0D5EE2676918400704269 /* Frameworks */,
 				79D0D5EF2676918400704269 /* Resources */,
@@ -170,9 +586,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79D0D60B2676918400704269 /* Build configuration list for PBXNativeTarget "Notepad AppUITests" */;
 			buildPhases = (
+				FB6BA57D24508E9F7B1B4859 /* [CP] Check Pods Manifest.lock */,
 				79D0D5F82676918400704269 /* Sources */,
 				79D0D5F92676918400704269 /* Frameworks */,
 				79D0D5FA2676918400704269 /* Resources */,
+				4CBEE7225C2C8ADB88B97107 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,6 +631,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 79D0D5D22676918000704269;
 			productRefGroup = 79D0D5DC2676918000704269 /* Products */;
@@ -232,8 +651,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				79D0D5EB2676918400704269 /* LaunchScreen.storyboard in Resources */,
+				79D0D6952676923100704269 /* Poppins-Black.ttf in Resources */,
+				79D0D6922676923100704269 /* Poppins-Medium.ttf in Resources */,
+				79EE08A22676A1930061C25E /* NoteCell.xib in Resources */,
+				79D0D6912676923100704269 /* Poppins-Light.ttf in Resources */,
+				79D0D6942676923100704269 /* Poppins-Bold.ttf in Resources */,
+				79EE08962676A0BD0061C25E /* NotesVC.xib in Resources */,
+				79D0D68F2676923100704269 /* FontStyleName.png in Resources */,
+				79D0D68B2676923100704269 /* ColorSystem.png in Resources */,
+				79D0D6932676923100704269 /* Poppins-Regular.ttf in Resources */,
+				79D0D68A2676923100704269 /* Colors.xcassets in Resources */,
 				79D0D5E82676918400704269 /* Assets.xcassets in Resources */,
-				79D0D5E62676918000704269 /* Main.storyboard in Resources */,
+				79D0D6962676923100704269 /* Poppins-SemiBold.ttf in Resources */,
+				79EE08C02676C5C40061C25E /* NoteDetailsVC.xib in Resources */,
+				79D0D69D2676923100704269 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +684,149 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4CBEE7225C2C8ADB88B97107 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Notepad App-Notepad AppUITests/Pods-Notepad App-Notepad AppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Notepad App-Notepad AppUITests/Pods-Notepad App-Notepad AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Notepad App-Notepad AppUITests/Pods-Notepad App-Notepad AppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FE29BD969A05C3CADDCCE80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Notepad AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		636533FA2FCDED8C1B9F5CB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Notepad App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECF9CB559F4D5EDEC5353678 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Notepad App/Pods-Notepad App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Notepad App/Pods-Notepad App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Notepad App/Pods-Notepad App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB6BA57D24508E9F7B1B4859 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Notepad App-Notepad AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		79D0D5D72676918000704269 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79D0D5E32676918000704269 /* ViewController.swift in Sources */,
+				79D0D69C2676923100704269 /* Animator.swift in Sources */,
+				79D0D6732676923100704269 /* UIView+Extension.swift in Sources */,
+				79D0D6A02676923100704269 /* DesignableUITextField.swift in Sources */,
+				79EE08BF2676C5C40061C25E /* NoteDetailsVC.swift in Sources */,
+				79EE08A12676A1930061C25E /* NoteCell.swift in Sources */,
+				79D0D6982676923100704269 /* Navigator.swift in Sources */,
+				79D0D6972676923100704269 /* AppCoordinator.swift in Sources */,
+				79D0D6A12676923100704269 /* IProgress.swift in Sources */,
+				79D0D6A32676923100704269 /* DesignableUIButton.swift in Sources */,
+				79D0D6742676923100704269 /* String+Extension.swift in Sources */,
 				79D0D5DF2676918000704269 /* AppDelegate.swift in Sources */,
+				79EE08952676A0BD0061C25E /* NotesVC.swift in Sources */,
+				79D0D6902676923100704269 /* Fonts.swift in Sources */,
+				792F1A0726793973001673E8 /* DesignableUIScrollView.swift in Sources */,
+				79D0D6A22676923100704269 /* DesignableUIView.swift in Sources */,
+				79EE089B2676A1490061C25E /* NotesViewModel.swift in Sources */,
+				79D0D69F2676923100704269 /* DesignableUIImageView.swift in Sources */,
+				79D0D68D2676923100704269 /* DesignSystem.swift in Sources */,
+				79EE08B42676AF2B0061C25E /* NoNotesView.swift in Sources */,
+				79D0D6752676923100704269 /* UITableViewCell+Extension.swift in Sources */,
+				79D0D69E2676923100704269 /* LanguageManager.swift in Sources */,
+				79D0D6992676923100704269 /* MainNavigator.swift in Sources */,
+				792F1A0226793711001673E8 /* DesignableUITextView.swift in Sources */,
+				79D0D68E2676923100704269 /* FontsSystem.swift in Sources */,
 				79D0D5E12676918000704269 /* SceneDelegate.swift in Sources */,
+				79D0D69B2676923100704269 /* Constant.swift in Sources */,
+				79EE08C82676C6250061C25E /* NoteDetailsViewModel.swift in Sources */,
+				79D0D6792676923100704269 /* BaseViewModel.swift in Sources */,
+				79D0D6762676923100704269 /* Dictionary+Extension.swift in Sources */,
+				79D0D6722676923100704269 /* Views+Localization.swift in Sources */,
+				79D0D69A2676923100704269 /* AppStoryboard.swift in Sources */,
+				79D0D6772676923100704269 /* UITableView+Extension.swift in Sources */,
+				79D0D68C2676923100704269 /* ColorsSystem.swift in Sources */,
+				79D0D6712676923100704269 /* UIAlertController+Extension.swift in Sources */,
+				79D0D6782676923100704269 /* BaseWireFrame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,20 +862,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		79D0D5E42676918000704269 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				79D0D5E52676918000704269 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		79D0D5E92676918400704269 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				79D0D5EA2676918400704269 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		79D0D6662676923100704269 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79D0D6672676923100704269 /* ar */,
+				79D0D6682676923100704269 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -433,12 +1000,14 @@
 		};
 		79D0D6062676918400704269 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34ECE26795A8A3ED7030DA1C /* Pods-Notepad App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5B6445KTDN;
-				INFOPLIST_FILE = "Notepad App/Info.plist";
+				DEVELOPMENT_TEAM = BW529QG5E4;
+				INFOPLIST_FILE = "Notepad App/SupportingFile/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,12 +1021,14 @@
 		};
 		79D0D6072676918400704269 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88079D3B7ECEDE7BCA40D9BE /* Pods-Notepad App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5B6445KTDN;
-				INFOPLIST_FILE = "Notepad App/Info.plist";
+				DEVELOPMENT_TEAM = BW529QG5E4;
+				INFOPLIST_FILE = "Notepad App/SupportingFile/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,6 +1042,7 @@
 		};
 		79D0D6092676918400704269 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 937C5EAC09B0A5972095EE05 /* Pods-Notepad AppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +1065,7 @@
 		};
 		79D0D60A2676918400704269 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 406B647FCB9CDF46EEC10440 /* Pods-Notepad AppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +1088,7 @@
 		};
 		79D0D60C2676918400704269 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCF76C71821FDF55FD30E564 /* Pods-Notepad App-Notepad AppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +1109,7 @@
 		};
 		79D0D60D2676918400704269 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF01A9CD6DDFB5F43260A969 /* Pods-Notepad App-Notepad AppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
