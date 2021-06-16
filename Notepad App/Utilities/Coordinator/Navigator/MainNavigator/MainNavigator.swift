@@ -15,7 +15,7 @@ class MainNavigator: Navigator{
      
         // Notes
         case notes
-        case noteDetails
+        case noteDetails(note:Note?)
         
         
         
@@ -34,9 +34,9 @@ class MainNavigator: Navigator{
             let viewModel = NotesViewModel()
             viewController.configure(viewModel: viewModel, coordinator: self.coordinator)
             return viewController
-        case .noteDetails:
+        case let .noteDetails(note):
             let viewController = NoteDetailsVC()
-            let viewModel = NoteDetailsViewModel()
+            let viewModel = NoteDetailsViewModel(note: note)
             viewController.configure(viewModel: viewModel, coordinator: self.coordinator)
             return viewController
              

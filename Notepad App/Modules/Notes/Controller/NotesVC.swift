@@ -23,29 +23,51 @@ class NotesVC: BaseWireFrame<NotesViewModel> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupNavigationButtons()
     }
     
     override func bind(viewModel: NotesViewModel) {
         subscribeToEmptyList()
         subscribeToAddButtonWhenNoNotes()
         bindNotesToTableView()
+        subscribeToDidSelectedNote()
     }
     private func subscribeToEmptyList(){
         viewModel.outputs.isEmptyList.subscribe(onNext: { [weak self](isEmpty) in
             guard let self = self else {return}
             self.notes_TableVeiw.backgroundView = isEmpty ? self.noNotesViwe:nil
+            self.navigationController?.navigationBar.isHidden = isEmpty ? true:false
         }).disposed(by: disposeBag)
     }
     private func subscribeToAddButtonWhenNoNotes(){
         noNotesViwe.add_Btn.rx.tap.subscribe {[weak self] (_) in
-            print("Add Note....")
+            self?.coordinator.mainNavigator.navigate(to: .noteDetails(note:nil))
         }.disposed(by: disposeBag)
     }
     private func bindNotesToTableView(){
         viewModel.outputs.notesObservable.bind(to: notes_TableVeiw.rx.items(cellIdentifier: NoteCell.identifier, cellType: NoteCell.self)){ [weak self](row, model, cell) in
             guard let self = self else {return}
+            cell.note = model
         }.disposed(by: disposeBag)
     }
     
+    private func subscribeToDidSelectedNote(){
+        notes_TableVeiw.rx.modelSelected(Note.self).subscribe(onNext: {[weak self] (note) in
+            guard let self = self else {return}
+            self.coordinator.mainNavigator.navigate(to: .noteDetails(note:note))
+        }).disposed(by: disposeBag)
+
+    }
+    
+}
+//MARK:- SetUpUI add button to navigationBar
+extension NotesVC{
+    private func setupNavigationButtons(){
+        let add = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped))
+        navigationItem.rightBarButtonItems = [add]
+    }
+    
+    @objc func addTapped(){
+        self.coordinator.mainNavigator.navigate(to: .noteDetails(note:nil))
+    }
 }

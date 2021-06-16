@@ -10,6 +10,10 @@
 		1D1888A570A86D19062D3BEF /* Pods_Notepad_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 719C96C1B8F58A927DF2DA23 /* Pods_Notepad_AppTests.framework */; };
 		792F1A0226793711001673E8 /* DesignableUITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792F1A0126793711001673E8 /* DesignableUITextView.swift */; };
 		792F1A0726793973001673E8 /* DesignableUIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792F1A0626793973001673E8 /* DesignableUIScrollView.swift */; };
+		792F1A1A26796669001673E8 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792F1A1926796669001673E8 /* Note.swift */; };
+		792F1A202679710D001673E8 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792F1A1F2679710D001673E8 /* RealmManager.swift */; };
+		792F1A2626798544001673E8 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792F1A2526798544001673E8 /* Helper.swift */; };
+		792F1A2B2679867B001673E8 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792F1A2A2679867B001673E8 /* AlertManager.swift */; };
 		79D0D5DF2676918000704269 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D5DE2676918000704269 /* AppDelegate.swift */; };
 		79D0D5E12676918000704269 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D5E02676918000704269 /* SceneDelegate.swift */; };
 		79D0D5E82676918400704269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79D0D5E72676918400704269 /* Assets.xcassets */; };
@@ -87,6 +91,10 @@
 		719C96C1B8F58A927DF2DA23 /* Pods_Notepad_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notepad_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		792F1A0126793711001673E8 /* DesignableUITextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableUITextView.swift; sourceTree = "<group>"; };
 		792F1A0626793973001673E8 /* DesignableUIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUIScrollView.swift; sourceTree = "<group>"; };
+		792F1A1926796669001673E8 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		792F1A1F2679710D001673E8 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		792F1A2526798544001673E8 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		792F1A2A2679867B001673E8 /* AlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		79D0D5DB2676918000704269 /* Notepad App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notepad App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79D0D5DE2676918000704269 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79D0D5E02676918000704269 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -193,6 +201,22 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		792F1A1E267970F9001673E8 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				792F1A1F2679710D001673E8 /* RealmManager.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		792F1A2426798518001673E8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				792F1A2526798544001673E8 /* Helper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		79D0D5D22676918000704269 = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +275,7 @@
 		79D0D61A2676922F00704269 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				792F1A1E267970F9001673E8 /* Local */,
 				79D0D61B2676922F00704269 /* Remote */,
 			);
 			path = Data;
@@ -308,6 +333,7 @@
 		79D0D6472676923100704269 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				792F1A2426798518001673E8 /* Helper */,
 				79D0D6482676923100704269 /* DesignSystem */,
 				79D0D65A2676923100704269 /* Coordinator */,
 				79D0D6612676923100704269 /* Constant */,
@@ -425,6 +451,7 @@
 		79D0D66A2676923100704269 /* Customize */ = {
 			isa = PBXGroup;
 			children = (
+				792F1A2A2679867B001673E8 /* AlertManager.swift */,
 				792F1A0126793711001673E8 /* DesignableUITextView.swift */,
 				79D0D66B2676923100704269 /* DesignableUIImageView.swift */,
 				79D0D66C2676923100704269 /* DesignableUITextField.swift */,
@@ -527,6 +554,7 @@
 		79EE08BB2676C5870061C25E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				792F1A1926796669001673E8 /* Note.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -796,6 +824,8 @@
 				79D0D6732676923100704269 /* UIView+Extension.swift in Sources */,
 				79D0D6A02676923100704269 /* DesignableUITextField.swift in Sources */,
 				79EE08BF2676C5C40061C25E /* NoteDetailsVC.swift in Sources */,
+				792F1A202679710D001673E8 /* RealmManager.swift in Sources */,
+				792F1A2B2679867B001673E8 /* AlertManager.swift in Sources */,
 				79EE08A12676A1930061C25E /* NoteCell.swift in Sources */,
 				79D0D6982676923100704269 /* Navigator.swift in Sources */,
 				79D0D6972676923100704269 /* AppCoordinator.swift in Sources */,
@@ -815,8 +845,10 @@
 				79D0D69E2676923100704269 /* LanguageManager.swift in Sources */,
 				79D0D6992676923100704269 /* MainNavigator.swift in Sources */,
 				792F1A0226793711001673E8 /* DesignableUITextView.swift in Sources */,
+				792F1A1A26796669001673E8 /* Note.swift in Sources */,
 				79D0D68E2676923100704269 /* FontsSystem.swift in Sources */,
 				79D0D5E12676918000704269 /* SceneDelegate.swift in Sources */,
+				792F1A2626798544001673E8 /* Helper.swift in Sources */,
 				79D0D69B2676923100704269 /* Constant.swift in Sources */,
 				79EE08C82676C6250061C25E /* NoteDetailsViewModel.swift in Sources */,
 				79D0D6792676923100704269 /* BaseViewModel.swift in Sources */,

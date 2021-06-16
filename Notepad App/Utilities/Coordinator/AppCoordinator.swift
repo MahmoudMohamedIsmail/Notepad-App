@@ -53,7 +53,7 @@ class AppCoordinator: Coordinator{
     }
     
     var rootViewController: UIViewController{
-        let viewController = mainNavigator.viewController(for: .noteDetails)
+        let viewController = mainNavigator.viewController(for: .notes)
         let navigationController = UINavigationController(rootViewController: viewController)
         self.navigationController = navigationController
         return navigationController

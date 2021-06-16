@@ -41,10 +41,10 @@
                             <rect key="frame" x="20" y="0.0" width="335" height="637"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rqH-SM-YhH">
-                                    <rect key="frame" x="0.0" y="0.0" width="335" height="86"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="335" height="75"/>
                                     <subviews>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8wP-MV-P2b" customClass="DesignableUITextView" customModule="Notepad_App" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="335" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="37.5"/>
                                             <color key="textColor" systemColor="labelColor"/>
                                             <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="18"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes"/>
@@ -53,7 +53,7 @@
                                             </userDefinedRuntimeAttributes>
                                         </textView>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="z9A-xz-0OE" customClass="DesignableUITextView" customModule="Notepad_App" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="43" width="335" height="43"/>
+                                            <rect key="frame" x="0.0" y="37.5" width="335" height="37.5"/>
                                             <color key="textColor" systemColor="labelColor"/>
                                             <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes"/>
@@ -67,7 +67,7 @@
                                     <rect key="frame" x="0.0" y="547" width="335" height="90"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORF-42-Afr">
-                                            <rect key="frame" x="0.0" y="0.0" width="134" height="45"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="122" height="45"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="45" id="Tn0-GH-aaW"/>
                                             </constraints>
@@ -78,10 +78,10 @@
                                             </state>
                                         </button>
                                         <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="koH-H3-VQR">
-                                            <rect key="frame" x="0.0" y="45" width="119" height="45"/>
+                                            <rect key="frame" x="0.0" y="45" width="110" height="45"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khH-0g-d75">
-                                                    <rect key="frame" x="0.0" y="0.0" width="119" height="45"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="45"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="45" id="e9G-ef-eUS"/>
                                                     </constraints>

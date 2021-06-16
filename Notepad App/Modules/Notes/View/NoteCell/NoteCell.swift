@@ -9,6 +9,11 @@ import UIKit
 
 class NoteCell: UITableViewCell {
     
+    var note:Note? {
+        didSet{
+            configure()
+        }
+    }
     
     @IBOutlet weak var noteTitle_lbl: UILabel!
     @IBOutlet weak var noteBody_lbl: UILabel!
@@ -31,7 +36,13 @@ class NoteCell: UITableViewCell {
     }
 
     private func configure(){
-        
+        guard  let note = note else {
+            return
+        }
+        noteTitle_lbl.text = note.title
+        noteBody_lbl.text = note.body
+        locationIcon_ImgView.isHidden = (note.lat.isEmpty && note.long.isEmpty) ? true:false
+        noteImage_ImgView.isHidden = (note.photoData?.isEmpty ?? true) ? true:false
     }
     
 }
