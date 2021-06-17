@@ -49,7 +49,6 @@
 		79D0D6982676923100704269 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D65D2676923100704269 /* Navigator.swift */; };
 		79D0D6992676923100704269 /* MainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D65F2676923100704269 /* MainNavigator.swift */; };
 		79D0D69A2676923100704269 /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D6602676923100704269 /* AppStoryboard.swift */; };
-		79D0D69B2676923100704269 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D6622676923100704269 /* Constant.swift */; };
 		79D0D69C2676923100704269 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D6642676923100704269 /* Animator.swift */; };
 		79D0D69D2676923100704269 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79D0D6662676923100704269 /* Localizable.strings */; };
 		79D0D69E2676923100704269 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D6692676923100704269 /* LanguageManager.swift */; };
@@ -139,7 +138,6 @@
 		79D0D65D2676923100704269 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		79D0D65F2676923100704269 /* MainNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
 		79D0D6602676923100704269 /* AppStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
-		79D0D6622676923100704269 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		79D0D6642676923100704269 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		79D0D6672676923100704269 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		79D0D6682676923100704269 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -352,7 +350,6 @@
 				792F1A2426798518001673E8 /* Helper */,
 				79D0D6482676923100704269 /* DesignSystem */,
 				79D0D65A2676923100704269 /* Coordinator */,
-				79D0D6612676923100704269 /* Constant */,
 				79D0D6632676923100704269 /* Animatro */,
 				79D0D6652676923100704269 /* Localization */,
 				79D0D66A2676923100704269 /* Customize */,
@@ -437,14 +434,6 @@
 				79D0D65F2676923100704269 /* MainNavigator.swift */,
 			);
 			path = MainNavigator;
-			sourceTree = "<group>";
-		};
-		79D0D6612676923100704269 /* Constant */ = {
-			isa = PBXGroup;
-			children = (
-				79D0D6622676923100704269 /* Constant.swift */,
-			);
-			path = Constant;
 			sourceTree = "<group>";
 		};
 		79D0D6632676923100704269 /* Animatro */ = {
@@ -869,7 +858,6 @@
 				79D0D68E2676923100704269 /* FontsSystem.swift in Sources */,
 				79D0D5E12676918000704269 /* SceneDelegate.swift in Sources */,
 				792F1A2626798544001673E8 /* Helper.swift in Sources */,
-				79D0D69B2676923100704269 /* Constant.swift in Sources */,
 				79EE08C82676C6250061C25E /* NoteDetailsViewModel.swift in Sources */,
 				79D0D6792676923100704269 /* BaseViewModel.swift in Sources */,
 				79D0D6762676923100704269 /* Dictionary+Extension.swift in Sources */,

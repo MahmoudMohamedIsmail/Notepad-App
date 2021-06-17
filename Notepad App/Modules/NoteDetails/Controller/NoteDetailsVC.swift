@@ -43,9 +43,15 @@ class NoteDetailsVC: BaseWireFrame<NoteDetailsViewModel> {
         title_TextView.text = self.viewModel.inputs.titleBehavior.value
         body_TextView.text = self.viewModel.inputs.bodyBehavior.value
         selectedPhoto_ImgView.image = self.viewModel.inputs.photoBehavior.value
-        let location = CLLocation(latitude: self.viewModel.inputs.latBehacior.value ?? 0, longitude:self.viewModel.inputs.longBehacior.value ?? 0 ).getAddressName()
-        location_lbl.text = location.isEmpty ? "Add location":location
-        handleLocation_lbl()
+        
+        Helper.getAddressFrom(self.viewModel.inputs.latBehacior.value ?? 0, self.viewModel.inputs.longBehacior.value ?? 0) { [weak self] (address) in
+            guard let self = self else {return}
+            DispatchQueue.main.async {
+                self.location_lbl.text = address.isEmpty ? "Add location":address
+                self.handleLocation_lbl()
+            }
+        }
+       
         handlePhotoAppearing()
     }
     
@@ -89,11 +95,13 @@ class NoteDetailsVC: BaseWireFrame<NoteDetailsViewModel> {
             LocationManager.shared.locationObservable.subscribe(onNext: {[weak self] (location) in
                 self?.viewModel.inputs.latBehacior.accept(location.coordinate.latitude)
                 self?.viewModel.inputs.longBehacior.accept(location.coordinate.longitude)
-                print(location.coordinate.latitude,"latttttttttt-------")
-                print(location.coordinate.longitude,"long-------")
-                DispatchQueue.main.async {
-                    self?.location_lbl.text = location.getAddressName()
-                    self?.handleLocation_lbl()
+                
+                Helper.getAddressFrom(location.coordinate.latitude, location.coordinate.longitude) { [weak self] (address) in
+                    guard let self = self else {return}
+                    DispatchQueue.main.async {
+                        self.location_lbl.text = address.isEmpty ? "Add location":address
+                        self.handleLocation_lbl()
+                    }
                 }
             }).disposed(by: self.disposeBag)
         }.disposed(by: self.disposeBag)
