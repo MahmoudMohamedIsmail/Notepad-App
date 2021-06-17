@@ -16,6 +16,7 @@
 		792F1A2B2679867B001673E8 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792F1A2A2679867B001673E8 /* AlertManager.swift */; };
 		792F1A43267A9C90001673E8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792F1A42267A9C90001673E8 /* LocationManager.swift */; };
 		792F1A48267AAAE5001673E8 /* CLLocation+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792F1A47267AAAE4001673E8 /* CLLocation+Ext.swift */; };
+		792F1A4E267AD415001673E8 /* Demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 792F1A4D267AD415001673E8 /* Demo.gif */; };
 		79D0D5DF2676918000704269 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D5DE2676918000704269 /* AppDelegate.swift */; };
 		79D0D5E12676918000704269 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D5E02676918000704269 /* SceneDelegate.swift */; };
 		79D0D5E82676918400704269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79D0D5E72676918400704269 /* Assets.xcassets */; };
@@ -99,6 +100,7 @@
 		792F1A2A2679867B001673E8 /* AlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		792F1A42267A9C90001673E8 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		792F1A47267AAAE4001673E8 /* CLLocation+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocation+Ext.swift"; sourceTree = "<group>"; };
+		792F1A4D267AD415001673E8 /* Demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Demo.gif; sourceTree = "<group>"; };
 		79D0D5DB2676918000704269 /* Notepad App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notepad App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79D0D5DE2676918000704269 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79D0D5E02676918000704269 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -221,9 +223,18 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		792F1A4C267AD409001673E8 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				792F1A4D267AD415001673E8 /* Demo.gif */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 		79D0D5D22676918000704269 = {
 			isa = PBXGroup;
 			children = (
+				792F1A4C267AD409001673E8 /* Demo */,
 				79D0D5DD2676918000704269 /* Notepad App */,
 				79D0D5F42676918400704269 /* Notepad AppTests */,
 				79D0D5FF2676918400704269 /* Notepad AppUITests */,
@@ -691,6 +702,7 @@
 				79D0D6912676923100704269 /* Poppins-Light.ttf in Resources */,
 				79D0D6942676923100704269 /* Poppins-Bold.ttf in Resources */,
 				79EE08962676A0BD0061C25E /* NotesVC.xib in Resources */,
+				792F1A4E267AD415001673E8 /* Demo.gif in Resources */,
 				79D0D68F2676923100704269 /* FontStyleName.png in Resources */,
 				79D0D68B2676923100704269 /* ColorSystem.png in Resources */,
 				79D0D6932676923100704269 /* Poppins-Regular.ttf in Resources */,
