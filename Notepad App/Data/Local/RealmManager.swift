@@ -9,14 +9,14 @@ import RxRealm
 import RealmSwift
 import RxSwift
 
-protocol NotesReposiotry {
+protocol NotesProtocol {
     func getResults<T:Object>(object:T.Type) -> Observable<Results<T>>
     func addResult<T:Object>(object:T) -> Bool
     func removeResult<T:Object>(object:T) -> Bool
     func editResult<T:Object>(object:T, with finalObject:Note) -> Bool
 }
 
-class RealmManager:NotesReposiotry {
+class RealmManager:NotesProtocol {
     
     
     static let shared = RealmManager()
@@ -27,7 +27,7 @@ class RealmManager:NotesReposiotry {
         let results = realm.objects(T.self)
         return Observable.collection(from: results)
     }
-    
+
     func addResult<T:Object>(object: T) -> Bool {
         try! realm.write {
             realm.add(object)

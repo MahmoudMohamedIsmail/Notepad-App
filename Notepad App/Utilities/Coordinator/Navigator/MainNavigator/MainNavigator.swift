@@ -37,6 +37,7 @@ class MainNavigator: Navigator{
         case let .noteDetails(note):
             let viewController = NoteDetailsVC()
             let viewModel = NoteDetailsViewModel(note: note)
+            viewController.navigationController?.navigationBar.isHidden = false
             viewController.configure(viewModel: viewModel, coordinator: self.coordinator)
             return viewController
              

@@ -20,6 +20,7 @@ class BaseWireFrame<T: BaseViewModel>: UIViewController{
         super.viewDidLoad()
         self.bind(viewModel: self.viewModel)
         self.view.localizeSubViews()
+        baseBind()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -48,7 +49,22 @@ class BaseWireFrame<T: BaseViewModel>: UIViewController{
     }
     
     func baseBind(){
+        viewModel.showMessageObservable.subscribe {[weak self] (title, message) in
+            guard let self = self else {return}
+            AlertManager.showMessage(vc: self,title: title, message: message, observable: nil)
+        }.disposed(by: self.disposeBag)
         
+        viewModel.shouldShowProgress.subscribe {[weak self] (show) in
+            guard let self = self, let show = show.element else {return}
+            DispatchQueue.main.async {
+                if show{
+                    IProgress.sharedInstance.show(self)
+                }else{
+                    IProgress.sharedInstance.hide(self)
+                }
+            }
+            
+        }.disposed(by: self.disposeBag)
     }
     
     func localization(){

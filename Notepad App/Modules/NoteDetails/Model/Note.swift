@@ -11,9 +11,8 @@ import RealmSwift
 class Note: Object {
     @objc dynamic var title = ""
     @objc dynamic var body = ""    
-    @objc dynamic var photoData:Data? = nil
-    @objc dynamic var long = ""
-    @objc dynamic var lat = ""
-    
+    @objc dynamic var photoData:NSData? = nil
+    var long = RealmOptional<Double>()
+    var lat = RealmOptional<Double>()
     
 }

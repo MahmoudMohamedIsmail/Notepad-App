@@ -21,21 +21,35 @@ class NotesVC: BaseWireFrame<NotesViewModel> {
         return NoNotesView()
     }()
     
+    private var isNavigation = false
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationButtons()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = !self.isNavigation
+        self.viewModel.inputs.viewWillAppear()
+
+    }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.navigationBar.isHidden = false
+       
+    }
     override func bind(viewModel: NotesViewModel) {
         subscribeToEmptyList()
         subscribeToAddButtonWhenNoNotes()
         bindNotesToTableView()
         subscribeToDidSelectedNote()
+        subscribeToDeleteNote()
     }
     private func subscribeToEmptyList(){
         viewModel.outputs.isEmptyList.subscribe(onNext: { [weak self](isEmpty) in
             guard let self = self else {return}
             self.notes_TableVeiw.backgroundView = isEmpty ? self.noNotesViwe:nil
+            self.isNavigation = isEmpty ? false:true
             self.navigationController?.navigationBar.isHidden = isEmpty ? true:false
         }).disposed(by: disposeBag)
     }
@@ -48,6 +62,7 @@ class NotesVC: BaseWireFrame<NotesViewModel> {
         viewModel.outputs.notesObservable.bind(to: notes_TableVeiw.rx.items(cellIdentifier: NoteCell.identifier, cellType: NoteCell.self)){ [weak self](row, model, cell) in
             guard let self = self else {return}
             cell.note = model
+            cell.nearest_lbl.isHidden = (row == 0 && self.viewModel.outputs.isNearestNote) ? false:true
         }.disposed(by: disposeBag)
     }
     
@@ -57,6 +72,13 @@ class NotesVC: BaseWireFrame<NotesViewModel> {
             self.coordinator.mainNavigator.navigate(to: .noteDetails(note:note))
         }).disposed(by: disposeBag)
 
+    }
+    
+    private func subscribeToDeleteNote(){
+        self.notes_TableVeiw.rx.modelDeleted(Note.self).subscribe(onNext: {[weak self] (note) in
+            guard let self = self else {return}
+            self.viewModel.inputs.delete(note: note)
+        }).disposed(by: disposeBag)
     }
     
 }

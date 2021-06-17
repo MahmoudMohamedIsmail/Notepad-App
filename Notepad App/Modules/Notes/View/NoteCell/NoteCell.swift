@@ -41,7 +41,7 @@ class NoteCell: UITableViewCell {
         }
         noteTitle_lbl.text = note.title
         noteBody_lbl.text = note.body
-        locationIcon_ImgView.isHidden = (note.lat.isEmpty && note.long.isEmpty) ? true:false
+        locationIcon_ImgView.isHidden = (note.lat.value == nil && note.long.value == nil) ? true:false
         noteImage_ImgView.isHidden = (note.photoData?.isEmpty ?? true) ? true:false
     }
     

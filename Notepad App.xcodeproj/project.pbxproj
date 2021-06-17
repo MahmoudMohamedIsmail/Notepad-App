@@ -14,6 +14,8 @@
 		792F1A202679710D001673E8 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792F1A1F2679710D001673E8 /* RealmManager.swift */; };
 		792F1A2626798544001673E8 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792F1A2526798544001673E8 /* Helper.swift */; };
 		792F1A2B2679867B001673E8 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792F1A2A2679867B001673E8 /* AlertManager.swift */; };
+		792F1A43267A9C90001673E8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792F1A42267A9C90001673E8 /* LocationManager.swift */; };
+		792F1A48267AAAE5001673E8 /* CLLocation+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792F1A47267AAAE4001673E8 /* CLLocation+Ext.swift */; };
 		79D0D5DF2676918000704269 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D5DE2676918000704269 /* AppDelegate.swift */; };
 		79D0D5E12676918000704269 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0D5E02676918000704269 /* SceneDelegate.swift */; };
 		79D0D5E82676918400704269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79D0D5E72676918400704269 /* Assets.xcassets */; };
@@ -95,6 +97,8 @@
 		792F1A1F2679710D001673E8 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		792F1A2526798544001673E8 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		792F1A2A2679867B001673E8 /* AlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		792F1A42267A9C90001673E8 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		792F1A47267AAAE4001673E8 /* CLLocation+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocation+Ext.swift"; sourceTree = "<group>"; };
 		79D0D5DB2676918000704269 /* Notepad App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notepad App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79D0D5DE2676918000704269 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79D0D5E02676918000704269 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -298,6 +302,7 @@
 				79D0D6242676923000704269 /* UITableViewCell+Extension.swift */,
 				79D0D6252676923000704269 /* Dictionary+Extension.swift */,
 				79D0D6262676923000704269 /* UITableView+Extension.swift */,
+				792F1A47267AAAE4001673E8 /* CLLocation+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -459,6 +464,7 @@
 				79D0D66E2676923100704269 /* DesignableUIView.swift */,
 				79D0D66F2676923100704269 /* DesignableUIButton.swift */,
 				792F1A0626793973001673E8 /* DesignableUIScrollView.swift */,
+				792F1A42267A9C90001673E8 /* LocationManager.swift */,
 			);
 			path = Customize;
 			sourceTree = "<group>";
@@ -832,7 +838,9 @@
 				79D0D6A12676923100704269 /* IProgress.swift in Sources */,
 				79D0D6A32676923100704269 /* DesignableUIButton.swift in Sources */,
 				79D0D6742676923100704269 /* String+Extension.swift in Sources */,
+				792F1A43267A9C90001673E8 /* LocationManager.swift in Sources */,
 				79D0D5DF2676918000704269 /* AppDelegate.swift in Sources */,
+				792F1A48267AAAE5001673E8 /* CLLocation+Ext.swift in Sources */,
 				79EE08952676A0BD0061C25E /* NotesVC.swift in Sources */,
 				79D0D6902676923100704269 /* Fonts.swift in Sources */,
 				792F1A0726793973001673E8 /* DesignableUIScrollView.swift in Sources */,
